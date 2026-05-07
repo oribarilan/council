@@ -38,22 +38,22 @@ automatically when the agent-files slice adds `.copilot/plugin.json`.
 
 ## Acceptance Criteria
 
-- [ ] `scripts/lint-agents.mjs` exists, uses Node built-ins only, runs
+- [x] `scripts/lint-agents.mjs` exists, uses Node built-ins only, runs
       cleanly when `.copilot/agents/` doesn't exist (prints "no agents
       directory; nothing to lint" and exits 0).
-- [ ] `scripts/smoke-load.mjs` exists, uses Node built-ins only,
+- [x] `scripts/smoke-load.mjs` exists, uses Node built-ins only,
       asserts: `AGENTS.md` exists, `CLAUDE.md` does not, `package.json`
       parses and has a SemVer-shaped `version`, and (gated on file
       existence) `.copilot/plugin.json`'s version equals
       `package.json`'s version. Exits non-zero with a readable message
       on any failure.
-- [ ] `package.json` `scripts.lint` is `node scripts/lint-agents.mjs`.
-- [ ] `package.json` `scripts.smoke` is `node scripts/smoke-load.mjs`.
-- [ ] `npm test` passes on the current repo state (no agent files, no
+- [x] `package.json` `scripts.lint` is `node scripts/lint-agents.mjs`.
+- [x] `package.json` `scripts.smoke` is `node scripts/smoke-load.mjs`.
+- [x] `npm test` passes on the current repo state (no agent files, no
       `.copilot/plugin.json`).
-- [ ] Both scripts are formatted by prettier (so `npm run format:check`
+- [x] Both scripts are formatted by prettier (so `npm run format:check`
       stays green).
-- [ ] Each script handles its own errors: any thrown error in the body
+- [x] Each script handles its own errors: any thrown error in the body
       is caught and surfaced as `console.error` + `process.exit(1)`,
       not an unhandled rejection.
 
