@@ -29,18 +29,18 @@ a commit, GitHub does the rest.
 
 ## Acceptance Criteria
 
-- [ ] `.github/workflows/test.yml` exists and triggers on push to any
+- [x] `.github/workflows/test.yml` exists and triggers on push to any
       branch and PR to `main`. Runs the matrix Ubuntu / macOS / Windows
       × Node 18 / 20 / 22. Each cell runs `npm ci` then `npm test`.
-- [ ] `.github/workflows/release.yml` exists and triggers on push of
+- [x] `.github/workflows/release.yml` exists and triggers on push of
       tags matching `v*`. Runs `npm test` once as a safety gate, then
       verifies tag matches `package.json` version, then creates a
       GitHub Release with notes extracted from `CHANGELOG.md`.
-- [ ] Both workflow files pass `prettier --check`.
-- [ ] After this task lands on `main` and is pushed, the `test.yml`
+- [x] Both workflow files pass `prettier --check`.
+- [x] After this task lands on `main` and is pushed, the `test.yml`
       workflow runs to green on all nine cells. **This is the gating
       verification — the task is not done until CI is green.**
-- [ ] `release.yml` is not exercised in this task (no tag is pushed).
+- [x] `release.yml` is not exercised in this task (no tag is pushed).
       The file exists and is syntactically valid; an end-to-end test
       lands when the agent-files slice cuts `v0.1.0`.
 
@@ -161,3 +161,14 @@ jobs:
   `readme.md` Acceptance Criteria already requires it).
 - Record the green CI run URL in this file's Notes section before
   moving to done.
+
+### Verification record
+
+- First push (`ea6c8f3`): 6/9 green. Windows failed on all three Node
+  versions due to Prettier `format:check` rejecting CRLF line endings
+  (Git on Windows defaults `core.autocrlf=true`, converting LF→CRLF
+  on checkout; Prettier defaults `endOfLine: lf`).
+- Fix (`a1c878f`): added `.gitattributes` pinning LF for all text
+  files. Same pattern `97` uses.
+- Second push: 9/9 green.
+  https://github.com/oribarilan/council/actions/runs/25504881406

@@ -253,44 +253,44 @@ apply here in v0.x — there is only one channel.
 
 This story is complete when a fresh clone of `council` has, at HEAD:
 
-- [ ] `README.md` exists, follows the voice rules, and a reader who has
+- [x] `README.md` exists, follows the voice rules, and a reader who has
       never heard of council can (a) understand what it does in under
       30 seconds, (b) find an install path for Copilot CLI, and (c)
       find the link to `CONTRIBUTE.md`. The Install section is
       placeholder-honest about pre-release status (no false claims of
       working install while the agent files haven't shipped yet).
-- [ ] `AGENTS.md` exists and is the single source of truth for
+- [x] `AGENTS.md` exists and is the single source of truth for
       contributor conventions. No `CLAUDE.md` exists (smoke test
       enforces this).
-- [ ] `CONTRIBUTE.md` exists and covers: repo layout, local dev loop,
+- [x] `CONTRIBUTE.md` exists and covers: repo layout, local dev loop,
       changelog discipline, SemVer rules, the manual release process,
       CI/CD, harness scope policy, and voice/content rules.
-- [ ] `CHANGELOG.md` exists with a populated `## [Unreleased]` section
+- [x] `CHANGELOG.md` exists with a populated `## [Unreleased]` section
       and the structural skeleton for future versions.
-- [ ] `LICENSE` exists (MIT).
-- [ ] `package.json` exists with zero runtime dependencies, prettier as
+- [x] `LICENSE` exists (MIT).
+- [x] `package.json` exists with zero runtime dependencies, prettier as
       devDependency, `engines.node >= 18`, and `scripts.test`,
       `scripts.lint`, `scripts.smoke`, `scripts.format`,
       `scripts.format:check` defined.
-- [ ] `justfile` exists and `just` with no args lists the recipes.
-- [ ] `.prettierrc.json` and `.prettierignore` exist.
-- [ ] `scripts/lint-agents.mjs` exists and runs cleanly on an empty
+- [x] `justfile` exists and `just` with no args lists the recipes.
+- [x] `.prettierrc.json` and `.prettierignore` exist.
+- [x] `scripts/lint-agents.mjs` exists and runs cleanly on an empty
       `agents/` dir (no false failures when there is nothing to lint).
-- [ ] `scripts/smoke-load.mjs` exists and passes on the v0.1 layout
+- [x] `scripts/smoke-load.mjs` exists and passes on the v0.1 layout
       (asserts `AGENTS.md` exists, `CLAUDE.md` does not, package.json
       version is well-formed; manifest version-equality check is
       stubbed to skip when `.copilot/plugin.json` doesn't yet exist
       and is documented as activating in the agent-files slice).
-- [ ] `.github/workflows/test.yml` exists, runs the matrix
+- [x] `.github/workflows/test.yml` exists, runs the matrix
       (Ubuntu/macOS/Windows × Node 18/20/22), and `npm test` passes on
       all nine cells. Verified by a green CI run on the first push to
       `main`.
-- [ ] `.github/workflows/release.yml` exists, triggers on `v*` tags,
+- [x] `.github/workflows/release.yml` exists, triggers on `v*` tags,
       and re-runs the test suite before publishing a GitHub Release.
       Not exercised in this story (no v0.1.0 tag yet) but file lands.
-- [ ] `npm test` passes locally on macOS (developer's box). Linux and
+- [x] `npm test` passes locally on macOS (developer's box). Linux and
       Windows are validated by CI.
-- [ ] All files this story adds pass the voice rules in `humanizer`:
+- [x] All files this story adds pass the voice rules in `humanizer`:
       no inflated AI vocabulary, no rule-of-three padding, no
       `..., enabling X` participles, em dashes only where they earn
       their keep.
