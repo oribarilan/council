@@ -1,0 +1,23 @@
+# Force LF line endings in the repo for all text files. Without this,
+# Git on Windows checks out CRLF by default and Prettier's format:check
+# (default endOfLine: lf) fails on every file in CI.
+
+* text=auto eol=lf
+
+# Explicit pins for files where line endings matter.
+*.md         text eol=lf
+*.js         text eol=lf
+*.mjs        text eol=lf
+*.cjs        text eol=lf
+*.json       text eol=lf
+*.yml        text eol=lf
+*.yaml       text eol=lf
+justfile     text eol=lf
+.prettierrc.json text eol=lf
+.prettierignore  text eol=lf
+
+# Binaries (none today, but future-proof).
+*.png  binary
+*.jpg  binary
+*.gif  binary
+*.ico  binary
