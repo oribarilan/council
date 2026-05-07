@@ -23,23 +23,23 @@ facing change lands. No retrofitting.
 
 ## Acceptance Criteria
 
-- [ ] `LICENSE` exists, contains the MIT License with copyright line
+- [x] `LICENSE` exists, contains the MIT License with copyright line
       "Copyright (c) 2025 Or Barila" (or the contributor's name as
       appropriate). No additional license text appended.
-- [ ] `CHANGELOG.md` exists, follows
+- [x] `CHANGELOG.md` exists, follows
       [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/),
       starts with the standard preamble, has a `## [Unreleased]`
       section at the top with the standard subsections (`Added`,
       `Changed`, `Fixed`, etc. — empty sub-bullets are fine, omit
       sections that have no entries).
-- [ ] `[Unreleased]` contains an entry under `### Added` describing
+- [x] `[Unreleased]` contains an entry under `### Added` describing
       this story's contribution: "Initial repo scaffolding: README,
       AGENTS.md, CONTRIBUTE.md, justfile, lint and smoke scripts, CI
       workflows."
-- [ ] No version section other than `[Unreleased]` exists yet — the
+- [x] No version section other than `[Unreleased]` exists yet — the
       first tagged version lands when the agent-files slice ships
       `v0.1.0`.
-- [ ] Link references at the bottom of `CHANGELOG.md` resolve to the
+- [x] Link references at the bottom of `CHANGELOG.md` resolve to the
       GitHub repo URL (`https://github.com/oribarilan/council`).
 
 ## File Content
