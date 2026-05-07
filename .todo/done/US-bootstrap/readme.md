@@ -34,48 +34,48 @@ project; a future contributor knows where to go for deeper docs.
 
 ## Acceptance Criteria
 
-- [ ] `README.md` exists at repo root.
-- [ ] Title and one-line tagline at top. Tagline is a real sentence
+- [x] `README.md` exists at repo root.
+- [x] Title and one-line tagline at top. Tagline is a real sentence
       that says what council is, not marketing prose.
-- [ ] CI badge near the top, linking to `actions/workflows/test.yml`.
-- [ ] **Pre-release banner** prominently visible (a short italics line
+- [x] CI badge near the top, linking to `actions/workflows/test.yml`.
+- [x] **Pre-release banner** prominently visible (a short italics line
       or callout): something like *"Early scaffolding. No working
       install yet — agent files ship in the next release."* Tone
       matches `97`'s "Early beta" line, but more honest about state.
-- [ ] **What this is** section: 2 short paragraphs explaining the
+- [x] **What this is** section: 2 short paragraphs explaining the
       multi-LLM council concept (Karpathy lineage acknowledged), what
       problem it addresses, how it differs from a single agent.
-- [ ] **How it works** section: 3-round flow (independent opinions →
+- [x] **How it works** section: 3-round flow (independent opinions →
       anonymized peer review → moderator synthesis). One sentence per
       round. Optionally a small ASCII diagram or just prose.
-- [ ] **Default roster** section: the table from `main.md` — six
+- [x] **Default roster** section: the table from `main.md` — six
       councillors, role, stance, model family. Tagged as "default;
       override at user/project level."
-- [ ] **Install** section: documents the eventual Copilot CLI install
+- [x] **Install** section: documents the eventual Copilot CLI install
       command (`copilot plugin marketplace add oribarilan/council` etc)
       but is **clearly tagged "coming with v0.1.0"** so a reader
       doesn't try it today and get a 404.
-- [ ] **Customize** section: 3-4 sentences explaining the override
+- [x] **Customize** section: 3-4 sentences explaining the override
       pattern (drop `council-pragmatist.agent.md` in
       `~/.copilot/agents/` to swap model or system prompt; same
       mechanism per-project). No invented config schema. Link to
       Copilot CLI's own agent docs for the format.
-- [ ] **FAQ** section with at least: "How is this different from one
+- [x] **FAQ** section with at least: "How is this different from one
       strong model thinking harder?" (answer: cognitive diversity
       across model families, not strength-stacking) and "Why Copilot
       CLI only at first?" (answer: agent semantics differ; one-harness-
       first beats multi-harness-half-right; cite the harness scope
       policy in `CONTRIBUTE.md`).
-- [ ] **Credits** section: links to Karpathy's `llm-council`,
+- [x] **Credits** section: links to Karpathy's `llm-council`,
       `oh-my-opencode-slim`, the `97` project, and `superpowers`.
-- [ ] **Licensing** section: one paragraph, MIT, link to `LICENSE`.
-- [ ] **Development** section: short, points at `CONTRIBUTE.md` for
+- [x] **Licensing** section: one paragraph, MIT, link to `LICENSE`.
+- [x] **Development** section: short, points at `CONTRIBUTE.md` for
       the long-form guide; lists `just check` as the canonical local
       command.
-- [ ] No inflated AI vocabulary, no rule-of-three padding, no
+- [x] No inflated AI vocabulary, no rule-of-three padding, no
       `..., enabling X` participles, em dashes only where they earn
       their keep. Compare to `97/README.md` for voice calibration.
-- [ ] `npm run format:check` still passes (the README is excluded
+- [x] `npm run format:check` still passes (the README is excluded
       from prettier per `.prettierignore`, but make sure no other
       formatting changes regress).
 
