@@ -27,45 +27,45 @@ answer.
 
 ## Acceptance Criteria
 
-- [ ] `CONTRIBUTE.md` exists at repo root.
-- [ ] Section 1: **What this repo is** — one paragraph on council
+- [x] `CONTRIBUTE.md` exists at repo root.
+- [x] Section 1: **What this repo is** — one paragraph on council
       (sub-agent fan-out, Karpathy lineage), one paragraph on
       "supported harness through v1.0: Copilot CLI", and the harness
       scope policy (a new harness requires demonstrated user demand
       AND behavioral evidence that existing roster moves outputs).
-- [ ] Section 2: **Repo layout** — the tree from `main.md`'s "Repo
+- [x] Section 2: **Repo layout** — the tree from `main.md`'s "Repo
       layout (target)" section, with `[shipped]` / `[future slice]`
       tags carried over.
-- [ ] Section 3: **Local development** — `just` recipes, the npm
+- [x] Section 3: **Local development** — `just` recipes, the npm
       script equivalents, prettier scope, cross-platform support
       notes (CI matrix Ubuntu/macOS/Windows × Node 18/20/22), the
       lint constraints (frontmatter etc., currently empty but
       documented for the next slice), the smoke test invariants.
-- [ ] Section 4: **Changelog discipline** — Keep a Changelog format,
+- [x] Section 4: **Changelog discipline** — Keep a Changelog format,
       which subsection (`Added` / `Changed` / `Fixed` etc) for what,
       style for entries (past tense, reader's perspective, no
       internal references like `.todo/` paths or task slugs in
       changelog entries), when an entry is not needed.
-- [ ] Section 5: **Versioning (SemVer)** — three places carry the
+- [x] Section 5: **Versioning (SemVer)** — three places carry the
       version once `.copilot/plugin.json` exists; smoke enforces
       equality; PATCH / MINOR / MAJOR rules.
-- [ ] Section 6: **The release process** — manual, never automatic;
+- [x] Section 6: **The release process** — manual, never automatic;
       step-by-step from "verify Unreleased complete" through to "CI
       cuts the GitHub Release"; the release commit subject convention;
       the hotfix variant.
-- [ ] Section 7: **CI/CD pipeline** — what `test.yml` does, what
+- [x] Section 7: **CI/CD pipeline** — what `test.yml` does, what
       `release.yml` does, what CI does NOT do (no npm publish, no
       auto-tagging, no auto-merging).
-- [ ] Section 8: **Distribution** — Copilot CLI marketplace install
+- [x] Section 8: **Distribution** — Copilot CLI marketplace install
       path (eventual, post-v0.1.0); single-source-of-truth marketplace
       manifest pattern; "we don't maintain a sibling
       `oribarilan/council-marketplace` repo"; rollback playbook.
-- [ ] Section 9: **Voice and content rules** — pull from
+- [x] Section 9: **Voice and content rules** — pull from
       `97/CONTRIBUTE.md` Section 10 and adapt. Reference the
       `humanizer` skill, list the no-no patterns concretely.
-- [ ] Section 10: **Quick reference** — task-to-command table.
-- [ ] Final pointers to `AGENTS.md` and `LICENSE`.
-- [ ] Reads as senior-engineer-explaining, not textbook-explaining.
+- [x] Section 10: **Quick reference** — task-to-command table.
+- [x] Final pointers to `AGENTS.md` and `LICENSE`.
+- [x] Reads as senior-engineer-explaining, not textbook-explaining.
       Voice rules apply.
 
 ## Structure (concrete)
