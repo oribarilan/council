@@ -14,7 +14,8 @@
   <a href="#default-roster">Roster</a> ·
   <a href="#install">Install</a> ·
   <a href="#customize">Customize</a> ·
-  <a href="#faq">FAQ</a>
+  <a href="#faq">FAQ</a> ·
+  <a href="./ROADMAP.md">Roadmap</a>
 </p>
 
 ---

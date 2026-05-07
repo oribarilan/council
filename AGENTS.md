@@ -256,6 +256,7 @@ The current foundation slice carries `package.json` `version`
 
 ## Where the deeper rules live
 
+- Forward map and milestone status: [`ROADMAP.md`](./ROADMAP.md)
 - Voice and writing style: `humanizer` skill (in superpowers)
 - Repo layout, dev loop, release process, harness scope policy: `CONTRIBUTE.md`
 - Bootstrap story design and DoD: `.todo/done/US-bootstrap/main.md` (after this story ships) or `.todo/US-bootstrap/main.md` (during)
