@@ -333,5 +333,28 @@ behavior are **out of scope** for this story. They are the next slice.
 
 ## Task Priority
 
-Tasks land in the next slice (writing-plans). For now, this story file
-captures the design.
+Three prefixed tasks form a strict pipeline (each depends on the
+previous):
+
+1. `1-tooling-and-prettier.md` — package.json, justfile, prettier
+   configs. `npm test` exists with stub scripts.
+2. `2-lint-and-smoke-scripts.md` — replaces stubs with real audit
+   logic. The version-sync gate goes live here, dormant until
+   `.copilot/plugin.json` arrives.
+3. `3-ci-workflows.md` — `test.yml` matrix and `release.yml`. CI
+   green is the gating verification.
+
+Four unprefixed tasks are independent and can land any time after
+task 1 (no enforced order, prioritized for execution as listed):
+
+- `agents-md.md` — required before task 2's smoke check passes; do
+  this first among the unprefixed group.
+- `license-and-changelog.md` — small, mechanical.
+- `readme.md` — needs the CI badge from task 3 to be honest, but
+  can be drafted anytime and the badge link added once `test.yml`
+  lands.
+- `contribute-md.md` — last; references everything else.
+
+Practical ordering: `1` → `agents-md` → `2` → `license-and-changelog`
+→ `readme` → `3` → `contribute-md`. Any sequence honoring the
+prefixed-task order and the AGENTS.md-before-task-2 rule is valid.
