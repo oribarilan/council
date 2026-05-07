@@ -26,19 +26,19 @@ voice rules, and where to dig deeper.
 
 ## Acceptance Criteria
 
-- [ ] `AGENTS.md` exists at repo root.
-- [ ] Length: target 200-400 lines. Imperative voice. Terse. No
+- [x] `AGENTS.md` exists at repo root.
+- [x] Length: target 200-400 lines. Imperative voice. Terse. No
       narrative, no "we did X because" paragraphs — that's
       `CONTRIBUTE.md`'s job. AGENTS.md is rules.
-- [ ] Section: **Quick start** — the three commands an agent needs
+- [x] Section: **Quick start** — the three commands an agent needs
       first (`npm install`, `npm test`, `just check`).
-- [ ] Section: **Layout** — the repo tree (mirror the one in
+- [x] Section: **Layout** — the repo tree (mirror the one in
       `main.md`) with one-line descriptions per file.
-- [ ] Section: **What you're working on** — one paragraph: this is a
+- [x] Section: **What you're working on** — one paragraph: this is a
       Copilot CLI plugin that ships a moderator agent and six
       councillor sub-agents implementing Karpathy-style council
       deliberation.
-- [ ] Section: **Conventions** —
+- [x] Section: **Conventions** —
       - Markdown is hand-managed (Prettier doesn't touch it)
       - Voice rules (humanizer): no AI vocabulary, no copula
         avoidance, no `..., enabling X` participles, em dashes in
@@ -46,10 +46,10 @@ voice rules, and where to dig deeper.
       - JSON / YAML / JS go through Prettier
       - Commits: imperative subject, short body, never amend
         unrelated work
-- [ ] Section: **Definition of done** — short version of: tests pass
+- [x] Section: **Definition of done** — short version of: tests pass
       locally on macOS, CI is green, AGENTS.md and CHANGELOG updated
       where relevant.
-- [ ] Section: **Don'ts** — bullet list of anti-patterns specific to
+- [x] Section: **Don'ts** — bullet list of anti-patterns specific to
       this repo:
       - Don't add a `CLAUDE.md` (smoke enforces absence)
       - Don't drift `package.json` version from
@@ -61,10 +61,10 @@ voice rules, and where to dig deeper.
       - Don't add new harnesses (Claude Code, OpenCode, Cursor)
         without the scope policy in `CONTRIBUTE.md` being met
       - Don't ship marketing prose in user-facing markdown
-- [ ] Section: **Pointers** — links to `CONTRIBUTE.md` (long-form),
+- [x] Section: **Pointers** — links to `CONTRIBUTE.md` (long-form),
       `CHANGELOG.md`, the spec at `.todo/US-bootstrap/main.md`,
       Karpathy's `llm-council`, Copilot CLI plugin docs.
-- [ ] Reads as imperative. Compare to `97/AGENTS.md` line-for-line
+- [x] Reads as imperative. Compare to `97/AGENTS.md` line-for-line
       for tone match.
 
 ## Verification
