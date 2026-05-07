@@ -24,29 +24,29 @@ the targets are empty stubs.
 
 ## Acceptance Criteria
 
-- [ ] `package.json` exists with: name `council`, version `0.0.0`,
+- [x] `package.json` exists with: name `council`, version `0.0.0`,
       `type: module`, `engines.node >= 18`, `license: MIT`, `repository`
       block pointing at `git+https://github.com/oribarilan/council.git`,
       empty `dependencies`, prettier-only `devDependencies`, `files`
       array listing what eventually gets published, and `scripts`:
       `lint`, `smoke`, `format`, `format:check`, `test` (= lint +
       format:check + smoke).
-- [ ] `justfile` exists with recipes: `default` (= `--list`), `test`,
+- [x] `justfile` exists with recipes: `default` (= `--list`), `test`,
       `lint`, `format`, `format-check`, `check` (= lint + format-check
       + test), `clean`. All recipes are thin wrappers over `npm run X`.
-- [ ] `.prettierrc.json` exists with `97`'s settings (single-quote JS,
+- [x] `.prettierrc.json` exists with `97`'s settings (single-quote JS,
       JSON allowed double-quote, sensible width).
-- [ ] `.prettierignore` exists and excludes `node_modules/`,
+- [x] `.prettierignore` exists and excludes `node_modules/`,
       `.todo/`, all markdown files (`**/*.md`), and `.github/` is NOT
       excluded (workflow YAML must be formatted).
-- [ ] `.gitignore` already exists; verify `node_modules/` and
+- [x] `.gitignore` already exists; verify `node_modules/` and
       `.prettiercache` are listed; add if missing. Do not strip
       anything currently there.
-- [ ] `scripts/` directory exists (created with a `.gitkeep` if empty,
+- [x] `scripts/` directory exists (created with a `.gitkeep` if empty,
       so task 2 has somewhere to land).
-- [ ] `npm install` runs cleanly. `npx prettier --version` works.
-- [ ] `just` (no args) lists all recipes without errors.
-- [ ] The `lint` and `smoke` npm scripts exist but currently print a
+- [x] `npm install` runs cleanly. `npx prettier --version` works.
+- [x] `just` (no args) lists all recipes without errors.
+- [x] The `lint` and `smoke` npm scripts exist but currently print a
       stub message (e.g. `node -e "console.log('lint stub')"`) so
       `npm test` exits 0 — task 2 replaces them with real scripts.
 

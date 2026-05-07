@@ -1,0 +1,33 @@
+{
+  "name": "council",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "A multi-agent council for your coding agent: parallel deliberation, peer review, synthesis. Plugin for GitHub Copilot CLI.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oribarilan/council.git"
+  },
+  "files": [
+    ".copilot/",
+    "scripts/",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "CONTRIBUTE.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "lint": "node -e \"console.log('lint stub - replaced in task 2')\"",
+    "smoke": "node -e \"console.log('smoke stub - replaced in task 2')\"",
+    "format": "prettier --write \"**/*.{js,mjs,cjs,json,yml,yaml}\"",
+    "format:check": "prettier --check \"**/*.{js,mjs,cjs,json,yml,yaml}\"",
+    "test": "npm run lint && npm run format:check && npm run smoke"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
